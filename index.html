@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Number Guesser</title>
+  </head>
+  <body>
+
+    <section id="instructions">
+      <h1>I have selected a number between 1 and 100. Can you guess what number I have selected?</h1>
+    </section>
+
+
+    <section id="user-input">
+      <label>Your Guess <input type="number" min="1" max="100" id="input"></label>
+    </section>
+
+    <section>
+      <button type="button" name="button" id="guess" disabled>Guess</button>
+      <button type="button" name="button" id="clear" disabled="true">Clear</button>
+    </section>
+
+    <section>
+      <button type="button" name="button" id="reset" disabled="true">Reset</button>
+    </section>
+
+    <section id="results">
+      <p id="results-header" class="hidden">
+        Your last guess was...
+      </p>
+      <h2 id="guessed-number" class="hidden"></h2>
+      <p id="feedback" class="hidden"></p>
+    </section>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
