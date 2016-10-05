@@ -75,7 +75,7 @@ function checkGuess() {
   } else {
       revealResults();
       results.style.backgroundColor = "green";
-      feedback.innerText = "Great work! Click Reset to play again.";
+      feedback.innerText = ("Great work! "+playerInput+" is correct. Click Reset to play again.");
   }
 }
 
