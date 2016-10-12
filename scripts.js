@@ -58,18 +58,15 @@ function checkGuess() {
     breakTheRules();
     return feedback.innerText = "You have not guessed a number.";
   }
-  if (playerInput > 100) {
-    breakTheRules();
-    return feedback.innerText = "Please guess within the range 1 - 100.";
-  }
-  if (playerInput < 1) {
+  if (playerInput > 100 || playerInput < 1) {
     breakTheRules();
     return feedback.innerText = "Please guess within the range 1 - 100.";
   }
   if (playerInput > generateNumber) {
      revealResults();
      return feedback.innerText = "Guess lower.";
-  } else if (playerInput < generateNumber) {
+  }
+  if (playerInput < generateNumber) {
       revealResults();
       return feedback.innerText = "Guess higher.";
   } else {
